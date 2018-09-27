@@ -1,8 +1,8 @@
 def standaardprijs(afstandKM):
     if 50 > afstandKM > 0:
-        prijs = afstandKM*0,80
+        prijs = afstandKM*0.80
     elif afstandKM > 50:
-        prijs = 15+afstandKM*0,60
+        prijs = 15+afstandKM*0.60
     elif afstandKM < 0:
         prijs = 0
     return prijs
@@ -20,15 +20,14 @@ prijs = standaardprijs(afstandKM)
 def ritprijs (leeftijd, weekendrit, afstandKM):
     if leeftijd < 12 or leeftijd >= 65:
         if weekendrit:
-            prijs2 = prijs * 0,70
+            prijs2 = prijs * 0.70
         else:
-            prijs2 = prijs * 0,65
+            prijs2 = prijs * 0.65
     else:
         if weekendrit:
-            prijs2 = prijs * 0,60
+            prijs2 = prijs * 0.60
         else:
             prijs2 = prijs
     return prijs2
 prijs2 = ritprijs(leeftijd,weekendrit,afstandKM)
-print('prijs voor korting: ', prijs)
-str(print('prijs2: ',prijs2))
+print('u moet €'+str(round(prijs2, 2)),'betalen')
