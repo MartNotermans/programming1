@@ -2,4 +2,6 @@ filename = "kaartnummers"
 file = open(filename, "r")
 for line in file:
      lst = line.split(",")
-     print ({0}heeft kaartnummer {1} lst[0])
+     kaartnummer = lst[0]
+     naam = lst[1]
+     print ('{} heeft kaartnummer {}'. format(naam.strip(),kaartnummer))
