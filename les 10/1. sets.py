@@ -1,0 +1,5 @@
+bruin = set(['Boxtel','Best','Beukenlaan','Eindhoven',"Helmond 't Hout", 'Helmont','Helmont Brouwhuis','Deurne'])
+groen = set(['Boxtel','Best','Beukenlaan','Eindhoven','Geldorp','Heeze','weert'])
+print('in bruin en groen:',bruin.intersection(groen))
+print('alleen in bruin:',bruin.difference(groen))
+print('alle stadions in bruin en groen',bruin.intersection(groen),bruin.symmetric_difference(groen  ))
